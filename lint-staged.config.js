@@ -13,7 +13,7 @@ module.exports = {
       }
     })
     console.log('match----->111', allFiles)
-    const match = micromatch(allFiles, ['*.js'])
+    const match = micromatch(allFiles, ['*.js']).filter(file => !file.match(reg))
     console.log('match----->', match)
     return `eslint ${match.join(' ')}`
   }
