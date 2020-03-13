@@ -7,7 +7,7 @@ async function test () {
         const reg = /^(\.).*$/
         console.log(files.match(reg))
         const match = files.filter(file => !files.match(reg))
-        return `eslint ${match.join(' ')}`
+        return `echo ${match.join(' ')}`
       }
     },
     maxArgLength: null,
