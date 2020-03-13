@@ -1,2 +1,2 @@
 let a = 122
-console.log(a)
+console.log(a+ '2')
