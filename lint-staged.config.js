@@ -5,7 +5,7 @@ module.exports = {
     let reg = /^(\.).*$/
     // allFiles = allFiles.includes('/') ? allFiles.split('/')
     if (allFiles.indexOf('/') > -1) {
-      allFiles.map(item => {
+      allFiles = allFiles.map(item => {
         let arr = item.split('/')
         return arr[arr.length - 1]
       })
