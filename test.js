@@ -3,12 +3,7 @@ const lintStaged = require('lint-staged')
 async function test () {
   const success = await lintStaged({
     config: {
-      '*.js': files => {
-        const reg = /^(\.).*$/
-        console.log(files.match(reg))
-        const match = files.filter(file => !file.match(reg))
-        return `eslint ${match.join(' ')}`
-      }
+      '*.js': 'echo 1'
     },
     maxArgLength: null,
     relative: false,
