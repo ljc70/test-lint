@@ -7,6 +7,7 @@ module.exports = {
     if (allFiles.includes('/')) {
       allFiles = allFiles.map(item => {
         let arr = item.split('/')
+        console.log(arr)
         return arr[arr.length - 1]
       })
     } 
